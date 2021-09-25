@@ -162,19 +162,22 @@ if nome_do_cliente != 'nome':
     #se o cliente concordar com as condições autoriza ele a fazer a avaliação   
         if botao_iniciar_simulacao:
             st.write("Muito obrigado por sua contribuição para esse projeto!")
-            time.sleep(5)
+            time.sleep(2)
             st.write("Análise de crédito em andamento...")
-            progress_bar = st.progress(0)
-            for seconds in range(5):
-                time.sleep(5)
-                progress_bar.progress(seconds + 1)
+            progress_bar = st.progress(0) #cria barra de progresso
+            mostra_avaliacao = st.empty() #guarda slot para inputar resultado da análise de crédito
+
+            for i in range(100): #preenche a barra de progresso
+                time.sleep(0.01)
+                progress_bar.progress(i + 1)
             
-            if avaliar_tomador(dicionario_de_respostas):
-                st.error("""Infelizmente você não foi aprovado no simulador de crédito :(""")
-
+            if avaliar_tomador(dicionario_de_respostas): #avalia o cliente no modelo
+                mostra_avaliacao.error("""Infelizmente você não foi aprovado no simulador de crédito :-1:""")
+                #negado
             else:
-                st.success("""Parabéns!!! Você conseguiu crédito em nosso simulador!!! :)""")
-
+                mostra_avaliacao.success("""Parabéns!!! Você conseguiu crédito em nosso simulador!!! :+1:""")
+                st.balloons()
+                #aprovado
 
 
 
