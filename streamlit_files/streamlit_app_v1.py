@@ -143,7 +143,7 @@ if nome_do_cliente != 'nome':
         coluna_familia1, coluna_familia2 = st.columns(2)
         
         #cria chave de tamanho da família para ser input no modelo
-        dicionario_de_respostas['tamanho_familia'] = st.number_input("Quantos membros tem sua família?", min_value=1,
+        dicionario_de_respostas['tamanho_familia'] = st.number_input("Com quantas pessoas você mora?", min_value=1,
                                                                             max_value=8, key=7851)
         
         #cria chave de qtd de filhos para ser input no modelo
