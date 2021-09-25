@@ -143,7 +143,7 @@ if nome_do_cliente != 'nome':
         coluna_familia1, coluna_familia2 = st.columns(2)
         
         #cria chave de tamanho da família para ser input no modelo
-        bool_sozinho = st.radio('Você mora sozinho?', lista_sim_nao, key=3654, index=1)
+        bool_sozinho = st.radio('Você mora sozinho?', lista_sim_nao, key=3654, index=0)
         if bool_sozinho == 'sim':
             dicionario_de_respostas['tamanho_familia'] = 1
         else:    
