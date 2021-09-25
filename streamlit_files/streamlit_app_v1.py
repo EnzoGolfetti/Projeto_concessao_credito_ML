@@ -42,8 +42,12 @@ def avaliar_tomador(dicionario_de_respostas):
 
     return avaliacao_cliente
 
-
-st.set_page_config(layout='wide', menu_items={'About':'Teste'}) #mudar ao final do projeto
+#configura o layout da página e o "About" do app
+st.set_page_config(layout='wide', menu_items={'About':'Construído por Enzo Golfetti em 09/2021'}) #mudar ao final do projeto
+#Cor de fundo do listbox
+st.markdown('<style>div[role="listbox"] ul{background-color: #eee1f79e};</style>', unsafe_allow_html=True)
+#display radio button horizontalmente
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
 #------------------------------------------------------------------------
 #Construindo a estrutura do Streamlit App
@@ -144,7 +148,6 @@ if nome_do_cliente != 'nome':
         
         #cria chave de qtd de filhos para ser input no modelo
         bool_filhos = st.radio('Você tem filhos?', lista_sim_nao, key=3654, index=1) #por comodidade para o cliente, pergunta se tem filhos
-        st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
         if bool_filhos == 'sim':
             dicionario_de_respostas['qtd_filhos'] = st.number_input("você tem filhos?", min_value=1,
