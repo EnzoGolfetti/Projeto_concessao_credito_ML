@@ -164,13 +164,12 @@ if nome_do_cliente != 'nome':
             st.write("Muito obrigado por sua contribuição para esse projeto!")
             time.sleep(5)
             st.write("Análise de crédito em andamento...")
-            avaliar_tomador(dicionario_de_respostas)
 
-        if avaliar_tomador(dicionario_de_respostas):
-            st.error("""Infelizmente você não foi aprovado no simulador de crédito :(""")
+            if avaliar_tomador(dicionario_de_respostas):
+                st.error("""Infelizmente você não foi aprovado no simulador de crédito :(""")
 
-        else:
-            st.success("""Parabéns!!! Você conseguiu crédito em nosso simulador!!! :)""")
+            else:
+                st.success("""Parabéns!!! Você conseguiu crédito em nosso simulador!!! :)""")
 
 
 
