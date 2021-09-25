@@ -147,8 +147,8 @@ if nome_do_cliente != 'nome':
         if bool_sozinho == 'sim':
             dicionario_de_respostas['tamanho_familia'] = 1
         else:    
-            dicionario_de_respostas['tamanho_familia'] = st.number_input("Com quantas pessoas você mora?", min_value=1,
-                                                                            max_value=8, key=7851)
+            dicionario_de_respostas['tamanho_familia'] = (st.number_input("Com quantas pessoas você mora?", min_value=1,
+                                                                            max_value=8, key=7851)) + 1
         
         #cria chave de qtd de filhos para ser input no modelo
         bool_filhos = st.radio('Você tem filhos?', lista_sim_nao, key=3654, index=1) #por comodidade para o cliente, pergunta se tem filhos
