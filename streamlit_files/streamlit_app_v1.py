@@ -143,7 +143,11 @@ if nome_do_cliente != 'nome':
         coluna_familia1, coluna_familia2 = st.columns(2)
         
         #cria chave de tamanho da família para ser input no modelo
-        dicionario_de_respostas['tamanho_familia'] = st.number_input("Com quantas pessoas você mora?", min_value=1,
+        bool_sozinho = st.radio('Você mora sozinho?', lista_sim_nao, key=3654, index=1)
+        if bool_sozinho == 'sim':
+            dicionario_de_respostas['tamanho_familia'] = 1
+        else:    
+            dicionario_de_respostas['tamanho_familia'] = st.number_input("Com quantas pessoas você mora?", min_value=1,
                                                                             max_value=8, key=7851)
         
         #cria chave de qtd de filhos para ser input no modelo
