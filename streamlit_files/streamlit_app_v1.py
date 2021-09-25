@@ -165,6 +165,7 @@ if nome_do_cliente != 'nome':
             time.sleep(5)
             st.write("Análise de crédito em andamento...")
 
+            time.sleep(10)
             if avaliar_tomador(dicionario_de_respostas):
                 st.error("""Infelizmente você não foi aprovado no simulador de crédito :(""")
 
