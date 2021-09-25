@@ -67,7 +67,7 @@ Send2Trash==1.7.1
 six==1.16.0
 scikit-learn==0.23.2
 smmap==4.0.0
-streamlit==0.84.1
+streamlit==0.89.0
 terminado==0.10.1
 testpath==0.5.0
 threadpoolctl==2.2.0
