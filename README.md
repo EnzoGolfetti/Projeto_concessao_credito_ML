@@ -11,11 +11,13 @@ Neste projeto:
 - Aplicamos modelos de classificação para seleção dos clientes;
 - E um plus, que era o foco principal do projeto: **Colocamos em produção o modelo, desenvolvendo nossa própria aplicação com a biblioteca Streamlit.**
 
-Acesse a aplicação aqui e teste por si o modelo final do projeto: [Simulação de Concessão de Crédito](https://share.streamlit.io/enzogolfetti/projeto_concessao_credito_ml/main/streamlit_files/streamlit_app_v1.py)
+Acesse a aplicação aqui e teste por si o modelo final do projeto: [Simulação de Concessão de Crédito - Streamlit App](https://share.streamlit.io/enzogolfetti/projeto_concessao_credito_ml/main/streamlit_files/streamlit_app_v1.py)
 
 Notebook com Exploratory Data Analysis: [EDA Notebook](https://github.com/EnzoGolfetti/Projeto_concessao_credito_ML/blob/main/projeto_concessao_credito_bootcamp_alura_v1.ipynb)
 
 Notebook com desenvolvimento do modelo: [ML Notebook](https://github.com/EnzoGolfetti/Projeto_concessao_credito_ML/blob/main/notebook_machine_learning_concessao_credito.ipynb)
+
+Arquivo com o desenvolvimento da aplicação Streamlit: [Streamlit App](https://github.com/EnzoGolfetti/Projeto_concessao_credito_ML/blob/main/streamlit_files/streamlit_app_v1.py)
 
 Todos os arquivos utilizados estão disponíveis neste repositório.
 
