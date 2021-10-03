@@ -15,7 +15,7 @@ Acesse a aplicação aqui e teste por si o modelo final do projeto: [Simulação
 
 Notebook com Exploratory Data Analysis: [EDA Notebook](https://github.com/EnzoGolfetti/Projeto_concessao_credito_ML/blob/main/projeto_concessao_credito_bootcamp_alura_v1.ipynb)
 
-Notebook com desenvolvimento do modelo: [ML notebook](https://github.com/EnzoGolfetti/Projeto_concessao_credito_ML/blob/main/notebook_machine_learning_concessao_credito.ipynb)
+Notebook com desenvolvimento do modelo: [ML Notebook](https://github.com/EnzoGolfetti/Projeto_concessao_credito_ML/blob/main/notebook_machine_learning_concessao_credito.ipynb)
 
 Todos os arquivos utilizados estão disponíveis neste repositório.
 
